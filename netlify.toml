@@ -1,9 +1,7 @@
-# Netlify site: https://captain.rapido.neighshopglobal.com
-# Base directory in UI: new-version/frontend/captain
+# Deploy repo: pre-built static files at repo root (no npm build on Netlify).
 
 [build]
-  command = "npm ci --prefix .. && npm run build:captain --prefix .."
-  publish = "dist"
+  publish = "."
 
 [build.environment]
   NODE_VERSION = "20"
